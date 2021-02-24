@@ -1,9 +1,30 @@
 import React from 'react';
-
 import './styles.css';
 
-const Ex2 = (props) => {
-  return <div>Упражнение 2</div>
+const Textcomp = (props) => {
+  let under = '';
+  if(props.underline) {
+    under = 'underline'
+  } else {
+    under = 'none'
+  }
+
+  const styles = {
+    fontSize: props.size,
+    textDecoration: under,
+    margin: props.space,
+    color: props.color
+  };
+
+  return (
+    <span
+      className="colored-text"
+      style = {styles}
+    >
+      111
+      {props.text}
+    </span>
+  );
 }
 
-export default Ex2;
+export default Textcomp;

@@ -1,9 +1,21 @@
 import React from 'react';
 
-class Ex1 extends React.Component {
+class Checkbox extends React.Component {
+  
+  state = {
+    value: false
+  }
+
+  //change = () => this.state.value === 'X' ? this.setState({value: 'V'}) : this.setState({value: 'X'})
+
+
+  change = () => {
+    this.setState({ value: !this.state.value });
+  }
+
   render () {
-    return <div>Упражнение1</div>;
+    return <div onClick = {this.change} style ={{fontSize: '25px', textAlign: 'center'}}>{this.state.value ? 'V' : 'X'}</div>
   }
 }
 
-export default Ex1;
+export default Checkbox;
