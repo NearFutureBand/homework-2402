@@ -11,6 +11,8 @@ function App() {
       <Ex2 />
       {/*<Ex3 />*/}
       <Dropdown />
+      <PlayerButton />
+      <Ex1 />
     </>
   );
 }
