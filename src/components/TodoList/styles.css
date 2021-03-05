@@ -1,0 +1,6 @@
+.todo-container {
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
